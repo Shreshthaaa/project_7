@@ -1,0 +1,9 @@
+header nav{
+    display: flex;
+}
+header nav h1 span{
+    color: red;
+}
+.tags{
+    justify-content: space-evenly;
+}
