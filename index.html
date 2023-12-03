@@ -1,499 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem Ipsum</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<style>
-    header nav{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    header nav div h1{
-        font-size: xx-large;
-    }
-    header nav div h1 span{
-        color: red;
-    }
-    #tags{
-        display: flex;
-        width: 60%;
-        justify-content: space-evenly;
-        color: grey;
-    }
-    #tags:hover{
-        color: black;
-        text-decoration: underline;
-    }
-    header nav div button{
-        background-color: red;
-        color: wheat;
-        border-radius: 20px;
-        border: none;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        width: 150px;
-        height: 40px;
-    }
-    .page1{
-        display: flex;
-        justify-content: space-between;
-        background-color:darkorange;
-    }
-    .page1 #first h1{
-        font-style: italic;
-        font-size: 70px;
-    }
-    #first{
+    <script src="https://kit.fontawesome.com/4b4fff6e25.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        header nav div h1 {
+            font-size: xx-large;
+        }
+
+        header nav div h1 span {
+            color: red;
+        }
+
+        #tags {
+            display: flex;
+            width: 60%;
+            justify-content: space-evenly;
+            color: grey;
+        }
+
+        #tag1:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag2:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag3:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag4:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag5:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag6:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag7:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        #tag8:hover {
+            color: black;
+            text-decoration: underline red;
+        }
+
+        header nav div button {
+            background-color: red;
+            color: wheat;
+            border-radius: 20px;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 150px;
+            height: 40px;
+        }
+
+        .page1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: darkorange;
+        }
+
+        .page1 #first h1 {
+            font-style: italic;
+            font-size: 70px;
+        }
+
+        #first {
             width: 800px;
             margin: auto;
             position: center;
             padding: 20px;
-    }
-    #btn1{
-        background-color: red;
-        color: white;
-        border-radius: 30px;
-        border: none;
-        text-align: center;
-        width: 100px;
-        height: 30px;
-        font: 15px;
-        display: inline-block;
-    }
-    #btn2{
-        background-color: darkorange;
-        color: black;
-        border: none;
-        font-size: 20px;
-        font-weight: 100px;
-    }
-    #cnt1{
-        position: center;
-        width: 500px;
-        margin: auto;
-    }
-    #cnt1 p{
-        position: center;
-    }
-    #page2{
-        display: flex;
-        justify-content: space-between;
-    }
-    #booking img{
-        position: absolute;
-    }
-    #booking div{
-        position: relative;
-        top: 550px;
-        left: 200px;
-        background-color: white;
-    }
-    #cnt1 h2 span{
-        color: red;
-    }
-    footer{
-        background-color: black;
-        color: white;
-    }
-    footer div{
-        display: flex;
-        justify-content: space-evenly;
-    }
-</style>
+        }
+
+        #btn1 {
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            font: 15px;
+            display: inline-block;
+        }
+
+        #btn2 {
+            background-color: darkorange;
+            color: black;
+            border: none;
+            font-size: 20px;
+            font-weight: 100px;
+        }
+
+        #cnt1 {
+            position: center;
+            width: 500px;
+            margin: auto;
+        }
+
+        #cnt1 p {
+            position: center;
+        }
+
+        #page2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #booking img {
+            position: absolute;
+        }
+
+        #booking div {
+            position: relative;
+            top: 550px;
+            left: 200px;
+            background-color: white;
+        }
+
+        #cnt1 h2 span {
+            color: red;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .choose {
+            background-color: darkorange;
+        }
+
+        .choose .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        .choose .container #box2 {
+            background-color: white;
+        }
+
+        .choose .container #box3 {
+            background-color: white;
+        }
+
+        .choose .container #box4 {
+            background-color: white;
+        }
+
+        #menu11:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #menu22:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #menu33:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #menu44:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #contact div {
+            width: 500px;
+        }
+
+        #formlast {
+            width: 100% !important;
+        }
+    </style>
+
 <body>
     <header>
-        <nav>
+        <nav style="position: fixed; background-color: white; z-index: 999;">
             <div>
-                <h1>Lorem_Ipsum<span>.</span></h1>
+                <h1 style="margin-top: 30px; margin-bottom: 30px;">Lorem_Ipsum<span>.</span></h1>
             </div>
-            <div id="tags">
-                <h3>Home</h3>
-                <h3>About</h3>
-                <h3>Menu</h3>
-                <h3>Events</h3>
-                <h3>Chefs</h3>
-                <h3>Gallery</h3>
+            <div id="tags" style="margin-top: 40px;">
+                <h3 id="tag1">Home</h3>
+                <h3 id="tag2">About</h3>
+                <h3 id="tag3">Menu</h3>
+                <h3 id="tag4">Events</h3>
+                <h3 id="tag5">Chefs</h3>
+                <h3 id="tag6">Gallery</h3>
                 <!--<label for="DropDown">Drop Down</label>
                 <select name="DropDown">
                 </select>-->
-                <h3>Drop Down <i class="fa fa-angle-down"></i></h3>
+                <h3 id="tag7">Drop Down <i class="fa fa-angle-down"></i></h3>
+                <h3 id="tag8">Contact</h3>
             </div>
-            <div id="btn">
+            <div id="btn" style="margin-top: 30px; margin-bottom: 20px;">
                 <button>Book a Table</button>
             </div>
         </nav>
 
         <div class="page1">
             <div id="first">
-                <h1>LOREM_IPSUM</h1>
-                <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+                <h1 style="margin-bottom: 50px; margin-top: 100px;">LOREM_IPSUM</h1>
+                <p style="margin-bottom: 30px;">Sed autem laudantium dolores. Voluptatem itaque ea consequatur
                     <br>
                     eveniet. Eum quas beatae cumque eum quaret.
                 </p>
-                <button id="btn1">Book a table</button>
-                <i class="fa fa-play-circle"></i>
-                <button id="btn2">Watch Video</button>
+                <button id="btn1"
+                    style="background-color: darkred; color: white; border-radius: 50px; border: none; width: 200px; height: 50px; display: inline-block; font: 15px;">Book
+                    a table</button>
+                <i class="fa fa-play-circle fa-2x" style="margin-left: 20px;"></i>
+                <button id="btn2" style="font-size: larger; margin-left: 5px;">Watch Video</button>
             </div>
             <img src="stats-bg.jpg" alt="food.img" width="500px" height="500px">
         </div>
     </header>
     <section id="About">
         <div id="cnt1">
-            <p>About Us</p>
-            <h2>LEARN MORE <span>ABOUT US</span></h2>
+            <p style="margin-left: 250px; color: grey; margin-top: 50px; margin-bottom: 10px;">About Us</p>
+            <h2 style="margin-left: 150px; margin-bottom: 30px;">LEARN MORE <span>ABOUT US</span></h2>
         </div>
         <div id="page2">
-        <div id="booking" style="size: 200px;">
-            <img src="about.jpg" alt="about.jpg" width="950px">
-            <div id="container">
-                <h3 style="color: black; font-size: xx-large; position: center; padding-left: 250px; padding-right: 230px; padding-top: 10px;">Book a Table</h3>
-                <h2 style="color: red; font-size: x-large; position: center; padding-left: 250px; padding-right: 250px; padding-bottom: 10px;">+1 5589 55488 55</h2>
+            <div id="booking" style="size: 200px;">
+                <img src="about.jpg" alt="about.jpg" width="900px" style="margin-left: 70px;">
+                <div id="container" style="text-align: center;">
+                    <h3
+                        style="color: black; font-size: xx-large; position: center; padding-left: 250px; padding-right: 230px; padding-top: 10px;">
+                        Book a Table</h3>
+                    <h2
+                        style="color: red; font-size: x-large; position: center; padding-left: 250px; padding-right: 250px; padding-bottom: 10px;">
+                        +1 5589 55488 55</h2>
+                </div>
             </div>
-        </div>
-        <div id="content">
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do
-                <br>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <i>&#10004;Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>
-            <br>
-            <br>
-            <i>&#10004; Duis aute irure dolor in reprehenderit in voluptate velit.</i>
-            <br>
-            <br>
-            <i>&#10004; Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                <br>
-                    Duis aute irure dolor in reprehenderit in voluptate trideta
-                <br>
-                    storacalaperda mastiro dolore eu fugiat nulla pariatur.
-            </i>
-            <br>
-            <br>
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                <br>
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                <br>
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                <br>
-                cupidatat non proident
-            </p>
-            <img src="about-2.jpg" alt="image.jpg" width="500px">
-            <button></button>
-        </div>
-        </div>
-    </section> 
-    <section id="choose">
-        <div class="container">
-            <div id="box1">
-                <h2>Why Choose
+            <div id="content">
+                <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do
                     <br>
-                    Lorem_Ipsum?
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consecteur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore
-                    et dolore magna aliqua.<br>Duis aute irure dolor in reprehenderit<br>Asperiosis dolores sed et. Tenetur quia eos.
-                    <br>Autem tempore quibusdam vel necessitatibus optio ad corpis.
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <button>Learn MORE</button>
-            </div>
-            <div id="box2">
-                <h3>Corporis voluptates <br>officia eiusmod</h3>
-                <p>Consequuntur sunt aut quasi<br>enim aliquam quae harum<br>pariatur laboris nisi ut aliquip</p>
-            </div>
-            <div id="box3">
-                <h3>Ullamco labpris<br>ladore pan</h3>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt<br>in culpa qui officia deserunt</p>
-            </div>
-            <div id="box4">
-                <h3>Labore consequatur<br>incidid dolore</h3>
-                <p>Aut suscipit aut cum nemo<br>deleniti aut omnis. Doloribus<br>ut maiores omnis facere</p>
-            </div>
-        </div>
-    </section>  
-    <section id="data">
-        <img src="stats-bg.jpg" alt="stats.jpg">
-        <div>
-            <h2>232</h2>
-            <p>Clients</p>
-        </div>
-        <div>
-            <h2>521</h2>
-            <p>Projects</p>
-        </div>
-        <div>
-            <h2>1453</h2>
-            <p>Hours of Support</p>
-        </div>
-        <div>
-            <h2>32</h2>
-            <p>Workers</p>
-        </div>
-    </section> 
-    <section id="menu">
-        <p>OUR MENU</p>
-        <h3>CHECK OUR LOREM_IPSUM MENU</h3>
-        <span>
-            <h4>Starters</h4>
-            <h4>Breakfast</h4>
-            <h4>Lunch</h4>
-            <h4>Dinner</h4>
-        </span>
-        <span>
-            <p>MENU</p>
-            <h3>Starters</h2>
-        </span>
-        <div id="menu1">
-            <div>
-                <img src="menu-item-1.png" alt="">
-                <h4>Magnam Tiste</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$5.95</h3>
-            </div>
-            <div>
-                <img src="menu-item-2.png" alt="">
-                <h4>Aut Luia</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$14.95</h3>
-            </div>
-            <div>
-                <img src="menu-item-3.png" alt="">
-                <h4>Est eligendi</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$8.95</h3>
-            </div>
-        </div>
-        <div id="menu2">
-            <div>
-                <img src="menu-item-4.png" alt="">
-                <h4>Eos Luibusdam</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$12.95</h3>
-            </div>
-            <div>
-                <img src="menu-item-5.png" alt="">
-                <h4>Eos Luibusdam</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$12.95</h3>
-            </div>
-            <div>
-                <img src="menu-item-6.png" alt="">
-                <h4>Eos Luibusdam</h4>
-                <p>Lorem, deren, trataro, filede, nerada</p>
-                <h3>$9.95</h3>
+                <i>&#10004;Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>
+                <br>
+                <br>
+                <i>&#10004; Duis aute irure dolor in reprehenderit in voluptate velit.</i>
+                <br>
+                <br>
+                <i>&#10004; Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate trideta
+                    <br>
+                    storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </i>
+                <br>
+                <br>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    <br>
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    <br>
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    <br>
+                    cupidatat non proident
+                </p>
+                <img src="about-2.jpg" alt="image.jpg" width="500px" style="margin-right: 70px;">
+                <button></button>
             </div>
         </div>
     </section>
-    <section id="testimonials">
-        <div id="container">
-            <p>Testimonials</p>
-            <h3>WHAT ARE THEY <span>SAYING ABOUT US</span></h3>
-
-            <div id="box1">
-                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                    <br>suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen
-                    <br>aliquam, risus at semper.
+    <section class="choose">
+        <div class="container">
+            <div id="box1" style="background-color:darkred; color: white;">
+                <h2
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-left: 40px; margin-right: 90px; margin-top: 40px; margin-bottom: 20px;">
+                    Why Choose
+                    <br>
+                    Lorem_Ipsum?
+                </h2>
+                <p style="margin-left: 40px; margin-right: 40px;">
+                    Lorem ipsum dolor sit amet, consecteur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut
+                    labore
+                    et dolore magna aliqua.<br>Duis aute irure dolor in reprehenderit<br>Asperiosis dolores sed et.
+                    Tenetur quia eos.
+                    <br>Autem tempore quibusdam vel necessitatibus<br>optio ad corpis.
                 </p>
-                <h3>Saul Goodman</h3>
-                <p>CEO & Founder</p>
+                <button
+                    style="margin-top: 20px; border-radius: 100px; border: none; background-color: indianred; text-align: center; width: 100px; height: 30px; font: 15px; display: inline-block; color: white; margin-left: 130px; margin-bottom: 30px;">Learn
+                    More</button>
             </div>
             <div id="box2">
-                <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
-                    <br>quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure
-                    <br>amet legam anim culpa.
-                </p>
-                <h3>Sara Wilson</h3>
-                <p>Designer</p>
+                <i class="fas fa-clipboard fa-2x"
+                    style="color: red; margin-left: 130px; margin-top: 40px; margin-bottom: 10px;"></i>
+                <h3
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; margin-left: 50px; margin-bottom: 30PX;">
+                    Corporis voluptates <br><span style="margin-left: 25px;">officia eiusmod</span></h3>
+                <p style="color: grey; margin-left: 30px; margin-right: 30px; font-size:120%;">Consequuntur sunt aut
+                    quasi<br>enim aliquam quae harum<br>pariatur laboris nisi ut aliquip</p>
             </div>
             <div id="box3">
-                <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                    <br>quem veniam duis minim tempor labore quem eram duis noster aute amet eram
-                    <br>fore quis sint minim.
-                </p>
-                <h3>Jena Karlis</h3>
-                <p>Store Owner</p>
+                <i class="fa fa-diamond fa-2x fa-solid"
+                    style="color: red; margin-left: 110px; margin-top: 40px; margin-bottom: 10px;"></i>
+                <h3
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; margin-left: 50px; margin-bottom: 30PX;">
+                    Ullamco labpris<br><span style="margin-left: 25px;">ladore pan</span></h3>
+                <p style="color: grey; margin-left: 20px; margin-right: 20px; font-size: 120%; margin-bottom: 10px;">
+                    Excepteur sint occaecat<br>cupidatat non proident, sunt<br>in culpa qui officia deserunt</p>
             </div>
             <div id="box4">
-                <p>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
-                    <br>noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
-                    <br>veniam culpa fore nisi cillum  quid.
-                </p>
-                <h3>John Larson</h3>
-                <p>Entrepreneur</p>
+                <i class="fas fa-inbox fa-2x"
+                    style="color: red; margin-left: 110px; margin-top: 40px; margin-bottom: 10px; "></i>
+                <h3
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; margin-left: 50px; margin-bottom: 30PX; margin-right: 40px;">
+                    Labore consequatur<br><span style="margin-left: 25px;">incidid dolore</span></h3>
+                <p style="color: grey; margin-left: 20px; margin-right: 20px; font-size: 120%; margin-bottom: 10px;">Aut
+                    suscipit aut cum nemo<br>deleniti aut omnis. Doloribus<br>ut maiores omnis facere</p>
+            </div>
+        </div>
+    </section>
+    <section id="data">
+        <!--<img src="stats-bg.jpg" alt="stats.jpg" width="100%" height="500vh">-->
+        <div style="display: flex; justify-content: space-evenly; background-image: url(stats-bg.jpg);">
+            <div style="margin-top: 80px; margin-bottom: 80px; color: white;">
+                <h2>232 <br> Clients</h2>
+            </div>
+            <div style="margin-top: 80px; margin-bottom: 80px; color: white;">
+                <h2>521 <br> Projects</h2>
+            </div>
+            <div style="margin-top: 80px; margin-bottom: 80px; color: white;">
+                <h2>1453 <br> Hours of Support</h2>
+            </div>
+            <div style="margin-top: 80px; margin-bottom: 80px; color: white;">
+                <h2>32 <br> Workers</h2>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <p style="margin-left: 800px; color: grey; margin-top: 50px; margin-bottom: 10px;">OUR MENU</p>
+        <h3 style="margin-left: 700px; margin-bottom: 20px;">CHECK OUR <span style="color: red;">LOREM_IPSUM MENU</span>
+        </h3>
+        <span style="display: flex; justify-content:center;">
+            <p id="menu11" style="margin-right: 30px; margin-left: 150px; margin-bottom: 25px; font-size: larger;">
+                Starters</p>
+            <p id="menu22" style="margin-right: 30px; font-size: larger;">Breakfast</p>
+            <p id="menu33" style="margin-right: 30px; font-size: larger;">Lunch</p>
+            <p id="menu44" style="margin-right: 30px; font-size: larger;">Dinner</p>
+        </span>
+        <span>
+            <p style="margin-left: 820px; color: grey; margin-bottom: 10px;">MENU</p>
+            <h3 style="color: darkred; font-size: x-large; margin-left: 800px; margin-bottom: 50px;">Starters</h2>
+        </span>
+        <div id="menu1" style="display: flex; justify-content: space-evenly; margin-left: 100px;">
+            <div style="margin-left: 100px;">
+                <img src="menu-item-1.png" alt="menu-item-1.jpg" width="350px">
+                <h4 style="margin-left: 100px; font-size:140%">Magnam Tiste</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$5.95</h3>
+                </div>
+            </div>
+            <div style="margin-left: 50px; margin-right: 50px;">
+                <img src="menu-item-2.png" alt="menu-item-2.jpg" width="350px">
+                <h4 style="margin-left: 130px; font-size:140%">Aut Luia</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$14.95</h3>
+                </div>
+            </div>
+            <div style="margin-right: 100px;">
+                <img src="menu-item-3.png" alt="menu-item-3.jpg" width="350px">
+                <h4 style="margin-left: 100px; font-size:140%">Est eligendi</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$8.95</h3>
+                </div>
+            </div>
+        </div>
+        <div id="menu2" style="display: flex; justify-content: space-evenly;">
+            <div style="margin-left: 100px;">
+                <img src="menu-item-4.png" alt="menu-item-4.jpg" width="350px">
+                <h4 style="margin-left: 100px; font-size:140%">Eos Luibusdam</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$12.95</h3>
+                </div>
+            </div>
+            <div>
+                <img src="menu-item-5.png" alt="menu-item-5.jpg" width="350px">
+                <h4 style="margin-left: 100px; font-size:140%">Eos Luibusdam</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$12.95</h3>
+                </div>
+            </div>
+            <div>
+                <img src="menu-item-6.png" alt="menu-item-6.jpg" width="350px">
+                <h4 style="margin-left: 100px; font-size:140%">Eos Luibusdam</h4>
+                <div>
+                    <p style="margin-left: 50px; color: grey; font-size: large; margin-top: 10px; margin-bottom: 10px;">
+                        Lorem, deren, trataro, filede, nerada</p>
+                    <h3 style="color: red; margin-left: 130px; font-size: xx-large;">$9.95</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" style="background-color: darkorange;">
+        <div id="container" style="margin-top: 50px;">
+            <p style="color: grey; margin-left: 770px; padding-top: 50px;">Testimonials</p>
+            <h3 style="margin-left: 650px; padding-top: 20px;">WHAT ARE THEY <span style="color: red;">SAYING ABOUT
+                    US</span></h3>
+
+            <div id="box1" style="display: flex; margin-top: 50px; margin-left: 500px;">
+                <div>
+                    <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                        <br>suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen
+                        <br>aliquam, risus at semper.
+                    </p>
+                    <h3 style="margin-top: 10px;">Saul Goodman</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div>
+                    <img src="testimonials-1.jpg" alt="testimonials-1.jpg" width="200px"
+                        style="border-radius: 100px; border-color: white;">
+                </div>
+            </div>
+            <div id="box2" style="display: flex; margin-top: 50px; margin-left: 500px;">
+                <div>
+                    <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                        <br>quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+                        <br>amet legam anim culpa.
+                    </p>
+                    <h3 style="margin-top: 10px;">Sara Wilson</h3>
+                    <p>Designer</p>
+                </div>
+                <div>
+                    <img src="testimonials-2.jpg" alt="testimonials-2.jpg" width="200px"
+                        style="border-radius: 100px; border-color: white;">
+                </div>
+
+            </div>
+            <div id="box3" style="display: flex; margin-top: 50px; margin-left: 500px;">
+                <div>
+                    <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
+                        <br>quem veniam duis minim tempor labore quem eram duis noster aute amet eram
+                        <br>fore quis sint minim.
+                    </p>
+                    <h3 style="margin-top: 10px;">Jena Karlis</h3>
+                    <p>Store Owner</p>
+                </div>
+                <div>
+                    <img src="testimonials-3.jpg" alt="testimonials-3.jpg" width="200px"
+                        style="border-radius: 100px; border-color: white;">
+                </div>
+            </div>
+            <div id="box4" style="display: flex; margin-top: 50px; margin-left: 500px;">
+                <div style="margin-bottom: 200px;">
+                    <p>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                        <br>noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
+                        <br>veniam culpa fore nisi cillum quid.
+                    </p>
+                    <h3 style="margin-top: 10px;">John Larson</h3>
+                    <p>Entrepreneur</p>
+                </div>
+                <div>
+                    <img src="testimonials-4.jpg" alt="testimonials-4.jpg" width="200px"
+                        style="border-radius: 100px; border-color: white;">
+                </div>
             </div>
         </div>
     </section>
     <section id="events">
-        <p>Events</p>
-        <h3>SHARE <span>YOUR MOMENTS</span> IN OUR RESTAURANT</h3>
+        <p style="color: grey; margin-top: 50px; margin-left: 800px; margin-bottom: 10px; font-size: larger;">Events</p>
+        <h3 style="margin-left: 600px; margin-top: 5px;">SHARE <span style="color: red;">YOUR MOMENTS</span> IN OUR
+            RESTAURANT</h3>
 
-        <div>
-            <div id="BP">
-                <img src="events-3.jpg" alt="">
-                <h4>Birthday Parties</h4>
-                <h2>$499</h2>
-                <p>Laborum aperiam atque omnis minus omnis est qui
-                    <br>assumenda quos. Quid id sit quibusdam. Esse quisqam
-                    <br>ducimus officia ipsum ut quibusdam maxime. Non enim
-                    <br>perspiciatis.
-                </p>
+        <div style="display: flex; margin-top: 50px;">
+            <div id="BP" style="background-image: url(events-3.jpg); background-blend-mode: darken;">
+                <!--<img src="events-3.jpg" alt="" width="530px">-->
+                <div
+                    style="margin-top: 500px; margin-bottom: 30px; margin-left: 88px; margin-right: 88px; color: white;">
+                    <h4 style="font-size: xx-large; padding-bottom: 10px;">Birthday Parties</h4>
+                    <h2 style="font-size: 200%; padding-bottom: 20px;">$499</h2>
+                    <p>Laborum aperiam atque omnis minus omnis est qui
+                        <br>assumenda quos. Quid id sit quibusdam. Esse quisqam
+                        <br>ducimus officia ipsum ut quibusdam maxime. Non enim
+                        <br>perspiciatis.
+                    </p>
+                </div>
             </div>
-            <div id="CP">
-                <img src="events-1.jpg" alt="">
-                <h4>Custom Parties</h4>
-                <h2>$99</h2>
-                <p>Quo corporis voluptas ea ad. Consecteur inventore
-                    <br>sapiente ipsum voluptas eos omnis facere. Enim facilis
-                    <br>veritatis id est rem repudiandae nulla expedita quas.
-                </p>
+            <div id="CP" style="margin-left: 2px; margin-right: 2px; background-image: url(events-1.jpg);">
+                <!--<img src="events-1.jpg" alt="" width="530px">-->
+                <div
+                    style="margin-top: 500px; margin-bottom: 30px; margin-left: 88px; margin-right: 88px; color: white;">
+                    <h4 style="font-size: xx-large; padding-bottom: 10px;">Custom Parties</h4>
+                    <h2 style="font-size: 200%; padding-bottom: 20px;">$99</h2>
+                    <p>Quo corporis voluptas ea ad. Consecteur inventore
+                        <br>sapiente ipsum voluptas eos omnis facere. Enim facilis
+                        <br>veritatis id est rem repudiandae nulla expedita quas.
+                    </p>
+                </div>
             </div>
-            <div id="PP">
-                <img src="events-2.jpg" alt="">
-                <h4>Private Parties</h4>
-                <h2>$289</h2>
-                <p>In delectus sint qui et enim. Et ab repudiandae
-                    <br>inventore quaret doloribus. Facere nemo vero est ut
-                    <br>dolores ea assumenda et. Delectus saepe accusamus
-                    <br>aspernatur.
-                </p>
+            <div id="PP" style="background-image: url(events-2.jpg);">
+                <!--<img src="events-2.jpg" alt="" width="530px">-->
+                <div
+                    style="margin-top: 500px; margin-bottom: 30px; margin-left: 88px; margin-right: 88px; color: white;">
+                    <h4 style="font-size: xx-large; padding-bottom: 10px;">Private Parties</h4>
+                    <h2 style="font-size: 200%; padding-bottom: 20px;">$289</h2>
+                    <p>In delectus sint qui et enim. Et ab repudiandae
+                        <br>inventore quaret doloribus. Facere nemo vero est ut
+                        <br>dolores ea assumenda et. Delectus saepe accusamus
+                        <br>aspernatur.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="chefs">
-        <p>CHEFS</p>
-        <h3>OUR PROFESSIONAL CHEFS</h3>
-        <div>
+    <section id="chefs" style="background-color: darkorange;">
+        <p
+            style="color: grey; margin-top: 50px; padding-top: 50px; margin-left: 800px; margin-bottom: 10px; font-size: larger;">
+            CHEFS</p>
+        <h3 style="margin-left: 700px; margin-top: 5px;">OUR <span style="color: red;">PROFESSIONAL CHEFS</span></h3>
+        <div style="display: flex; margin-top: 40px;">
             <div>
-                <img src="chefs-1.jpg" alt="">
-                <h3>Walter White</h3>
-                <p>Master Chef</p>
-                <p>Velit aut  quia fugit et et. Dolorum ea voluptate vel tempore
-                    <br>tenetur ipsa quae aut. Ipsum exercitationem iure minima
-                    <br>enim corporis et voluptate.
-                </p>
+                <img src="chefs-1.jpg" alt="" width="500px" style="margin-left: 40px; margin-right: 10px;">
+                <div style="margin-left: 40px; margin-bottom: 50px; background-color: white; color: black;">
+                    <h3 style="text-align: center;">Walter White</h3>
+                    <p style="color: grey; text-align: center;">Master Chef</p>
+                    <p style="margin-top: 5px; padding-bottom: 20px; text-align: center;">Velit aut quia fugit et et.
+                        Dolorum ea voluptate vel tempore
+                        <br>tenetur ipsa quae aut. Ipsum exercitationem iure minima
+                        <br>enim corporis et voluptate.
+                    </p>
+                </div>
             </div>
             <div>
-                <img src="chefs-2.jpg" alt="">
-                <h3>Sarah Johnson</h3>
-                <p>Patissier</p>
-                <p>Quo esse repellendus quia id. Est eum et accusantium
-                    <br>pariatur fugit nihil minima suscipit corporis. Voluptate sed
-                    <br>quas reiciendis animi neque sapiente.
-                </p>
+                <img src="chefs-2.jpg" alt="" width="500px" style="margin-right: 10px;">
+                <div style="margin-left: 5px; margin-bottom: 50px; background-color: white; color: black;">
+                    <h3 style="text-align: center;">Sarah Johnson</h3>
+                    <p style="color: grey; text-align: center;">Patissier</p>
+                    <p style="margin-top: 5px; padding-bottom: 20px; text-align: center;">Quo esse repellendus quia id.
+                        Est eum et accusantium
+                        <br>pariatur fugit nihil minima suscipit corporis. Voluptate sed
+                        <br>quas reiciendis animi neque sapiente.
+                    </p>
+                </div>
             </div>
             <div>
-                <img src="chefs-3.jpg" alt="">
-                <h3>William Anderson</h3>
-                <p>Cook</p>
-                <p>Vero omnis enim consequatur. Voluptas consecteur unde qui
-                    <br>molestiae deserunt. Voluptas enim aut architecto porro 
-                    <br>aspernatur molestiae modi.
-                </p>
+                <img src="chefs-3.jpg" alt="" width="500px" style="margin-right: 10px;">
+                <div style="margin-left: 5px; margin-bottom: 50px; background-color: white; color: black;">
+                    <h3 style="text-align: center;">William Anderson</h3>
+                    <p style="color: grey; text-align: center;">Cook</p>
+                    <p style="margin-top: 5px; padding-bottom: 20px; text-align: center;">Vero omnis enim consequatur.
+                        Voluptas consecteur unde qui
+                        <br>molestiae deserunt. Voluptas enim aut architecto porro
+                        <br>aspernatur molestiae modi.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section id="tableBook">
-        <p>BOOK A TABLE</p>
-        <h3>BOOK <span>YOUR STAY</span> WITH US</h3>
-        <div>
-            <img src="reservation.jpg" alt="">
-            <form>
+        <p style="color: grey; margin-top: 50px; margin-left: 800px; margin-bottom: 10px; font-size: larger;">BOOK A
+            TABLE</p>
+        <h3 style="margin-left: 750px; margin-top: 5px; margin-bottom: 40px;">BOOK <span style="color: red;">YOUR
+                STAY</span> WITH US</h3>
+        <div style="display: flex; background-color: lightgray; margin-left: 100px; margin-right: 100px;">
+            <img src="reservation.jpg" alt="" width="500px">
+            <form style="margin-left: 50px; margin-top: 150px; margin-left: 50px;">
                 <label for="name"></label>
-                <input placeholder="Your Name" type="text" id="name">
+                <input placeholder="Your Name" type="text" id="name"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
                 <label for="email"></label>
-                <input placeholder="Your Email" type="text" id="email">
+                <input placeholder="Your Email" type="text" id="email"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
                 <label for="phone"></label>
-                <input placeholder="Your Phone" type="number" id="phone">
+                <input placeholder="Your Phone" type="number" id="phone"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
+                <br>
                 <label for="date"></label>
-                <input type="date" placeholder="Date" id="date">
+                <input type="text" placeholder="Date" id="date"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
                 <label for="time"></label>
-                <input placeholder="Time" type="time" id="time">
+                <input placeholder="Time" type="text" id="time"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
                 <label for="people"></label>
-                <input placeholder="# of people" type="number" id="people">
+                <input placeholder="# of people" type="number" id="people"
+                    style="box-sizing: border-box; width: 30%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
+                <br>
                 <label for="msg"></label>
-                <textarea id="msg" placeholder="Your Message" type="text"></textarea>
-                <button>Book a Table</button>
+                <textarea id="msg" placeholder="Your Message" type="text"
+                    style="box-sizing: border-box; width: 96%; padding: 10px 15px; margin: 8px; padding-bottom: 50px; margin-bottom: 20px;"></textarea>
+                <br>
+                <button
+                    style="background-color: darkred; color: white; border-radius: 50px; border: none; width: 200px; margin-left: 240px; height: 50px; display: inline-block; font: 15px;">Book
+                    a Table</button>
             </form>
         </div>
     </section>
-    <section id="gallery">
+    <section id="gallery" style="background-color: darkorange;">
         <div id="container">
-            <p>GALLERY</p>
-            <h3>CHECK <span>OUR GALLERY</span></h3>
-            <div id="images">
-                <img src="gallery-1.jpg" alt="">
-                <img src="gallery-2.jpg" alt="">
-                <img src="gallery-3.jpg" alt="">
-                <img src="gallery-4.jpg" alt="">
-                <img src="gallery-5.jpg" alt="">
-                <img src="gallery-6.jpg" alt="">
-                <img src="gallery-7.jpg" alt="">
-                <img src="gallery-8.jpg" alt="">
+            <p
+                style="color: grey; margin-top: 50px; padding-top: 80px; margin-left: 800px; margin-bottom: 10px; font-size: larger;">
+                GALLERY</p>
+            <h3 style="margin-left: 740px; margin-top: 15px; margin-bottom: 50px;">CHECK <span style="color: red;">OUR
+                    GALLERY</span></h3>
+            <div id="images" style="display: flex; padding-bottom: 150px; padding-left: 50px; padding-right: 50px;">
+                <img src="gallery-1.jpg" alt="gallery-1.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-2.jpg" alt="gallery-2.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-3.jpg" alt="gallery-3.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-4.jpg" alt="gallery-4.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-5.jpg" alt="gallery-5.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-6.jpg" alt="gallery-6.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-7.jpg" alt="gallery-7.jpg" width="180px" style="margin-right: 3px;">
+                <img src="gallery-8.jpg" alt="gallery-8.jpg" width="180px">
             </div>
         </div>
     </section>
     <section id="contact">
-        <p>CONTACT</p>
-        <h3>NEED HELP? <span>CONTACT US</span></h3>
-        <div id="map"></div>
-        <div>
-            <div>
-                <h4>Our Address</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+        <p
+            style="color: grey; margin-top: 50px; padding-top: 50px; margin-left: 800px; margin-bottom: 10px; font-size: larger;">
+            CONTACT</p>
+        <h3 style="margin-left: 720px; margin-top: 5px;">NEED HELP? <span style="color: red;">CONTACT US</span></h3>
+        <!--<div id="map"></div>-->
+        <div style="display: flex; margin-top: 70px;">
+            <div style="background-color: lightgray; margin-left: 200px; display: flex;">
+                <i class="fa-solid fa-address-book fa-3x" style="margin-top: 38px; margin-left: 10px;"></i>
+                <div>
+                    <h4 style="margin-top: 40px; margin-left: 30px; margin-right: 100px; margin-bottom: 10px;">Our
+                        Address</h4>
+                    <p style="margin-left: 30px; margin-bottom: 50px; margin-right: 50px;">A108 Adam Street, New York,
+                        NY 535022</p>
+                </div>
             </div>
-            <div>
-                <h4>Email Us</h4>
-                <p>contact@example.com</p>
+            <div style="background-color: lightgray; margin-left: 200px; display: flex;">
+                <i class="fas fa-envelope fa-3x" style="margin-top: 38px; margin-left: 10px;"></i>
+                <div>
+                    <h4 style="margin-top: 40px; margin-left: 30px; margin-right: 300px; margin-bottom: 10px;">Email Us
+                    </h4>
+                    <p style="margin-left: 30px; margin-bottom: 50px; margin-right: 50px;">contact@example.com</p>
+                </div>
             </div>
-            <div>
-                <h4>Call Us</h4>
-                <p>+1 5589 55488 55</p>
+        </div>
+        <div style="display:flex; margin-top: 50px;">
+            <div style="background-color: lightgray; margin-left: 200px; display: flex;">
+                <i class="fa-solid fa-phone fa-3x" style="margin-top: 38px; margin-left: 10px;"></i>
+                <div>
+                    <h4 style="margin-top: 40px; margin-left: 30px; margin-right: 300px; margin-bottom: 10px;">Call Us
+                    </h4>
+                    <p style="margin-left: 30px; margin-bottom: 50px; margin-right: 50px;">+1 5589 55488 55</p>
+                </div>
             </div>
-            <div>
-                <h4>Opening Hours</h4>
-                <p><span>Mon-Sat:</span> 11AM - 23PM; <span>Sunday:</span> Closed</p>
+            <div style="background-color: lightgray; margin-left: 200px; display: flex;">
+                <i class="fas fa-square-share-nodes fa-3x" style="margin-top: 38px; margin-left: 10px;"></i>
+                <div>
+                    <h4 style="margin-top: 40px; margin-left: 30px; margin-right: 300px; margin-bottom: 10px;">Opening
+                        Hours</h4>
+                    <p style="margin-left: 30px; margin-bottom: 50px; margin-right: 50px;"><span>Mon-Sat:</span> 11AM -
+                        23PM; <span>Sunday:</span> Closed</p>
+                </div>
             </div>
-            <form>
-                <label for="name"></label>
-                <input placeholder="Your Name" type="text" id="name">
-                <label for="email"></label>
-                <input placeholder="Your Email" type="text" id="email">
+        </div>
+        <div id="formlast">
+            <form style="margin-left: 200px; margin-top: 50px; margin-bottom: 100px;">
+                <div style="width: 100%; display: flex;">
+                    <label for="name"></label>
+                    <input placeholder="Your Name" type="text" id="name"
+                        style="box-sizing: border-box; width: 45%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
+                    <label for="email"></label>
+                    <input placeholder="Your Email" type="text" id="email"
+                        style="box-sizing: border-box; width: 45%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
+                </div>
+                <br>
                 <label for="subject"></label>
-                <input placeholder="Subject" type="text" id="subject">
+                <input placeholder="Subject" type="text" id="subject"
+                    style="box-sizing: border-box; width: 91%; padding: 10px 15px; margin: 8px; margin-bottom: 20px;">
+                <br>
                 <label for="msg"></label>
-                <textarea placeholder="Message" rows="3" cols="10"></textarea>
-                <button>Send Message</button>
+                <textarea placeholder="Message" rows="3" cols="10"
+                    style="box-sizing: border-box; width: 92%; padding: 10px 15px; margin: 8px; padding-bottom: 50px; margin-bottom: 20px;"></textarea>
+                <button
+                    style="background-color: darkred; color: white; border-radius: 50px; border: none; width: 200px; margin-left: 550px; height: 50px; display: inline-block; font: 15px;">Send
+                    Message</button>
             </form>
         </div>
     </section>
 </body>
 <footer>
     <div id="container">
-        <div style="display: flex; flex-direction: column;">
-            <h4>Address</h4>
-            <p>A108 Adam Street
-                <br>New York, NY 535022 - US
-            </p>
+        <div style="display: flex;">
+            <i class="fas fa-location-dot fa-2x" style="padding-top: 50px;"></i>
+            <div style="display: flex; flex-direction: column; margin-left: 20px; margin-top: 50px;">
+                <h4>Address</h4>
+                <p style="margin-top: 5px;">A108 Adam Street
+                    <br>> New York, NY 535022 - US
+                </p>
+            </div>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <h4>Reservations:</h4>
-            <p><span>Phone:</span> +1 5589 55488 55</p>
-            <p><span>Email:</span> info@example.com</p>
+        <div style="display: flex;">
+            <i class="fa-solid fa-phone fa-2x" style="padding-top: 50px;"></i>
+            <div style="display: flex; flex-direction: column; margin-left: 20px; margin-top: 50px;">
+                <h4>Reservations:</h4>
+                <p style="margin-top: 5px;"><span>Phone:</span> +1 5589 55488 55</p>
+                <p><span>Email:</span> info@example.com</p>
+            </div>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <h4>Opening Hours</h4>
-            <p><span>Mon-Sat: 11AM</span> - 23PM</p>
-            <p>Sunday: Closed</p>
-        </div>
-        <div>
-            <h4>Folow Us</h4>
+        <div style="display: flex;">
+            <i class="fa-regular fa-clock fa-2x" style="padding-top: 50px;""></i>
+        <div style=" display: flex; flex-direction: column;margin-left: 20px; margin-top: 50px;">
+                <h4>Opening Hours</h4>
+                <p style="margin-top: 5px;"><span>Mon-Sat: 11AM</span> - 23PM</p>
+                <p>Sunday: Closed</p>
         </div>
     </div>
-    <p style="margin-left: 40%">Copyright <span>Lorem_Ipsum.</span> All Rights Reserved</p>
-    <p style="margin-left: 45%; margin-bottom: 10%;">Designed by Shreshtha</p>
+    <div style="display: flex; flex-direction: column;">
+        <h4 style="margin-top: 50px; font-size: larger;">Folow Us</h4>
+        <div style="margin-top: 10px;">
+            <i class="fa fa-twitter" style="margin-right: 7px;"></i>
+            <i class="fa-brands fa-facebook" style="margin-right: 7px;"></i>
+            <i class="fa-brands fa-instagram" style="margin-right: 7px;"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+    </div>
+    <p style="margin-left: 40%; margin-top: 70px; margin-bottom: 20px;">Copyright <span>Lorem_Ipsum.</span> All Rights
+        Reserved</p>
+    <p style="margin-left: 45%; padding-bottom: 50px;">Designed by Shreshtha</p>
 </footer>
+
 </html>
